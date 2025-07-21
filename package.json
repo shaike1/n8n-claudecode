@@ -1,7 +1,7 @@
 {
-  "name": "@holtweb/n8n-nodes-claudecode",
-  "version": "0.2.0",
-  "description": "n8n node for Claude Code SDK integration with MCP support",
+  "name": "@shaike1/n8n-nodes-claudecode-enhanced",
+  "version": "1.0.0",
+  "description": "Enhanced n8n node for Claude Code with native authentication, advanced MCP support, and enterprise features",
   "keywords": [
     "n8n-community-node-package",
     "n8n",
@@ -10,20 +10,23 @@
     "ai",
     "anthropic",
     "mcp",
-    "model-context-protocol"
+    "model-context-protocol",
+    "authentication",
+    "enhanced",
+    "enterprise"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/holt-web-ai/n8n-nodes-claudecode#readme",
+  "homepage": "https://github.com/shaike1/n8n-claudecode#readme",
   "bugs": {
-    "url": "https://github.com/holt-web-ai/n8n-nodes-claudecode/issues"
+    "url": "https://github.com/shaike1/n8n-claudecode/issues"
   },
   "author": {
-    "name": "Adam Holt",
-    "email": "adam@holtweb.co.nz"
+    "name": "Shaike1",
+    "email": "enhanced@shaike1.dev"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/holt-web-ai/n8n-nodes-claudecode.git"
+    "url": "https://github.com/shaike1/n8n-claudecode.git"
   },
   "engines": {
     "node": ">=20.15"
@@ -43,14 +46,24 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "nodes": [
-      "dist/nodes/ClaudeCode/ClaudeCode.node.js"
+      "dist/nodes/ClaudeCode/ClaudeCode.node.js",
+      "dist/nodes/ClaudeCode/ClaudeCodeEnhanced.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/ClaudeCodeApi.credentials.js",
+      "dist/credentials/MCPServer.credentials.js"
     ]
   },
   "dependencies": {
-    "@anthropic-ai/claude-code": "latest"
+    "@anthropic-ai/claude-code": "latest",
+    "@anthropic-ai/sdk": "^0.28.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.7.9",
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
+    "@types/ws": "^8.5.13",
     "@typescript-eslint/parser": "~8.32.0",
     "eslint": "^8.57.0",
     "eslint-plugin-n8n-nodes-base": "^1.16.3",
