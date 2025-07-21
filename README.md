@@ -1,6 +1,6 @@
 # Enhanced Claude Code - n8n Community Node
 
-[![npm version](https://badge.fury.io/js/@shaike1%2Fn8n-nodes-claudecode-enhanced.svg)](https://badge.fury.io/js/@shaike1%2Fn8n-nodes-claudecode-enhanced)
+[![npm version](https://badge.fury.io/js/n8n-nodes-claudecode-enhanced.svg)](https://badge.fury.io/js/n8n-nodes-claudecode-enhanced)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 🚀 **An enhanced version of the Claude Code n8n community node with enterprise features!**
@@ -34,7 +34,7 @@ This project extends the original [@holtweb/n8n-nodes-claudecode](https://github
 ```bash
 docker run -it --rm \
   -p 5678:5678 \
-  -e N8N_COMMUNITY_NODE_PACKAGES="@shaike1/n8n-nodes-claudecode-enhanced" \
+  -e N8N_COMMUNITY_NODE_PACKAGES="n8n-nodes-claudecode-enhanced" \
   -v ~/.n8n:/home/node/.n8n \
   n8nio/n8n
 ```
@@ -42,7 +42,7 @@ docker run -it --rm \
 ### npm
 
 ```bash
-npm install @shaike1/n8n-nodes-claudecode-enhanced
+npm install n8n-nodes-claudecode-enhanced
 ```
 
 ## 📖 Documentation

@@ -1,5 +1,5 @@
 {
-  "name": "@shaike1/n8n-nodes-claudecode-enhanced",
+  "name": "n8n-nodes-claudecode-enhanced",
   "version": "1.0.0",
   "description": "Enhanced n8n node for Claude Code with native authentication, advanced MCP support, and enterprise features",
   "keywords": [
