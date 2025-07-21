@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
-          scope: '@holtweb'
+          scope: ''
 
       - name: Install dependencies
         run: npm ci
